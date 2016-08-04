@@ -1,0 +1,112 @@
+{{template "base/frame_base.html" .}}
+{{define "head"}}
+<link rel="stylesheet" href="static/assets/css/morris-0.4.3.min.css">
+<link rel="stylesheet" type="text/css" href="static/assets/lineicons/style.css">
+{{end}}
+
+{{define "body"}}
+<!--main content start-->
+<section id="main-content">
+  <section class="wrapper site-min-height">
+    <div class="row mt">
+      <div class="col-lg-12">
+        <div class="col-md-12">
+          <div class="alert alert-success">
+            <h5><b id="today"></b></h5>
+            <hr>
+            <b id="total_player_count"></b>
+          </div>
+          <hr>
+          <!-- 新增用户、活跃用户、付费人数、付费次数、累计付费金额 -->
+          <div class="row mtbox">
+            <div class="col-md-2 col-sm-2 col-md-offset-1 box0">
+              <div class="box1">
+                <span class="li_user"></span>
+                <h5>新增用户</h5>
+                <h3 id="new_player_count">0</h3>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-2 box0">
+              <div class="box1">
+                <span class="li_heart"></span>
+                <h5>活跃用户</h5>
+                <h3 id="login_player_count">0</h3>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-2 box0">
+              <div class="box1">
+                <span class="li_diamond"></span>
+                <h5>付费人数</h5>
+                <h3 id="pay_player_count">0</h3>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-2 box0">
+              <div class="box1">
+                <span class="li_pen"></span>
+                <h5>付费次数</h5>
+                <h3 id="pay_count">0</h3>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-2 box0">
+              <div class="box1">
+                <span class="li_banknote"></span>
+                <h5>付费金额</h5>
+                <h3 id="total_pay">0</h3>
+              </div>
+            </div>
+          </div><!-- /row mt -->  
+
+		<!-- 分房实时数据 -->
+          <div class="row mtbox" id="room_data" >
+            <div class="col-md-3 col-sm-3  col-md-offset-1 box0">
+              <div class="box1">
+                <span class="li_user"></span>
+                <h5>初级场</h5>
+                <h3 id="room_1">0</h3>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3 box0">
+              <div class="box1">
+                <span class="li_user"></span>
+                <h5>高手场</h5>
+                <h3 id="room_2">0</h3>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3 box0">
+              <div class="box1">
+                <span class="li_user"></span>
+                <h5>精英场</h5>
+                <h3 id="room_3">0</h3>
+              </div>
+            </div>
+          </div><!-- /row mt -->  
+          <div id="online_status" class="row mtbox">
+            <div class="content-panel">
+              <h4> 在线人数</h4>
+              <hr>
+              <div class="panel-body">
+                <div id="hero-graph" class="graph"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row mtbox">
+            <div id="data_panel" class="content-panel">
+              <table id="data_table" class="table table-hover">
+                <h4 id="data_table_title"></h4>
+                <hr>
+              </table>
+            </div><!-- /content-panel -->
+          </div>
+
+        </div><!-- /col-md-12 -->
+      </div>
+    </div>
+  </section><!-- /wrapper -->
+</section><!-- /MAIN CONTENT -->
+{{end}}
+
+{{define "body_after"}}
+   <script src="static/js/raphael-min.js"></script>
+   <script src="static/js/morris-0.4.3.min.js"></script>
+<script src="static/js/main.js"></script>
+{{end}}

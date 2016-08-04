@@ -1,0 +1,72 @@
+{{template "base/frame_base.html" .}}
+{{define "head"}}
+<link rel="stylesheet" href="static/assets/css/morris-0.4.3.min.css">
+<link rel="stylesheet" type="text/css" href="static/assets/lineicons/style.css">
+{{end}}
+
+{{define "body"}}
+<!--main content start-->
+<section id="main-content">
+  <section class="wrapper site-min-height">
+    <!-- BROADCAST MESSAGES -->
+    <div class="row mt">
+      <div class="col-lg-12">
+        <div class="form-panel">
+          <h4 class="mb"><i class="fa fa-angle-right"></i> 发送游戏广播消息</h4>
+            <div class="form-group">
+                <label class="control-label" for="broadcastContent">广播内容:</label>
+                <input type="text" class="form-control" id="broadcastContent">
+            </div>
+            <button id="send_broadcast" type="button" class="btn btn-theme">发送</button>
+        </div><!-- /form-panel -->
+      </div><!-- /col-lg-12 -->
+    </div><!-- /row -->
+
+    <!-- PRIZE MESSAGES -->
+    <div class="row mt">
+      <div class="col-lg-12">
+        <div class="form-panel">
+          <h4 class="mb"><i class="fa fa-angle-right"></i> 发送游戏奖励消息</h4>
+            <form class="form-inline">
+              <div class="form-group">
+                <label class="control-label" for="userId">用户ID:</label>
+                <input type="text" class="form-control" id="userId" placeholder="">
+              </div>
+              <br><br>
+              <div class="form-group">
+                <label class="control-label" for="goldCount">金币数量:</label>
+                <input type="text" class="form-control" id="goldCount" placeholder="">
+              </div>
+              <br><br>
+              <div class="form-group">
+                <label class="control-label" for="diamondCount">钻石数量:</label>
+                <input type="text" class="form-control" id="diamondCount" placeholder="">
+              </div>
+              <br><br>
+              <div class="form-group">
+                <label class="control-label" for="propId">道具名称:</label>
+                <input type="text" class="form-control" id="propId" placeholder="">
+              </div>
+              <br><br>
+              <div class="form-group">
+                <label class="control-label" for="propCount">道具数量:</label>
+                <input type="text" class="form-control" id="propCount" placeholder="">
+              </div>
+              <br><br>
+            </form>
+            <input type="text" class="form-control" id="prizeDesc" placeholder="奖励内容公告和描述">
+            <br><br>
+            <button id="send_prize" type="button" class="btn btn-theme">发送奖励</button>
+        </div><!-- /form-panel -->
+      </div><!-- /col-lg-12 -->
+    </div><!-- /row -->
+  </section><!-- /wrapper -->
+</section><!-- /MAIN CONTENT -->
+{{end}}
+
+{{define "body_after"}}
+   <script src="static/js/raphael-min.js"></script>
+   <script src="static/js/morris-0.4.3.min.js"></script>
+<script src="static/assets/js/layer/layer.min.js"></script>
+<script src="static/js/notify_mgr.js"></script>
+{{end}}

@@ -1,0 +1,30 @@
+{{template "base/base.html" .}}
+{{define "head"}}
+<title>后台管理系统</title>
+{{end}}
+{{define "body"}}
+<div id="login-page">
+    <div class="container">
+        <form class="form-login">
+            <h2 class="form-login-heading">登陆</h2>
+            <div class="login-wrap">
+                <input id="username" type="text" class="form-control" placeholder="用户名" autofocus value="">
+                <br>
+                <input id="userpwd" type="password" class="form-control" placeholder="密码" value="">
+                <br>
+                <button id="login_btn" class="btn btn-theme btn-block" type="button"><i class="fa fa-lock"></i> 登陆</button>
+                <br>
+                <p id="login_tip" style="text-align: center;"></p>
+            </div>
+        </form>
+    </div>
+</div>
+{{end}}
+
+{{define "body_after"}}
+<script type="text/javascript" src="static/assets/js/jquery.backstretch.min.js"></script>
+<script>
+    $.backstretch("static/img/login-bg.jpg", {speed: 500});
+</script>
+<script src="static/js/login.js"></script>
+{{end}}

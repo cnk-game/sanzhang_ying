@@ -1,0 +1,263 @@
+gc1(1): 3+0+150+1 us, 0 -> 0 MB, 21 (21-0) objects, 2 goroutines, 16/0/0 sweeps, 0(0) handoff, 0(0) steal, 0/0/0 yields
+gc2(1): 1+0+160+1 us, 0 -> 0 MB, 83 (87-4) objects, 4 goroutines, 21/0/0 sweeps, 0(0) handoff, 0(0) steal, 0/0/0 yields
+gc3(1): 1+0+212+1 us, 0 -> 0 MB, 165 (196-31) objects, 7 goroutines, 31/0/0 sweeps, 0(0) handoff, 0(0) steal, 0/0/0 yields
+gc4(1): 1+0+227+0 us, 0 -> 0 MB, 381 (475-94) objects, 7 goroutines, 35/0/0 sweeps, 0(0) handoff, 0(0) steal, 0/0/0 yields
+gc5(1): 1+0+343+1 us, 0 -> 0 MB, 631 (816-185) objects, 8 goroutines, 45/0/0 sweeps, 0(0) handoff, 0(0) steal, 0/0/0 yields
+gc6(1): 1+0+531+0 us, 0 -> 0 MB, 682 (943-261) objects, 8 goroutines, 48/0/0 sweeps, 0(0) handoff, 0(0) steal, 0/0/0 yields
+I1201 16:49:51.809091 03098 main.go:29] ===>启动游戏服务器
+I1201 16:49:51.810502 03098 config.go:68] ===>config:&{0 }
+I1201 16:49:51.810803 03098 config_db.go:107] ==>card_config:&{1 300 400 90 60 30 20 300000 300000 30 30 0}
+I1201 16:49:51.810837 03098 config_db.go:107] ==>card_config:&{23 400 400 90 60 30 20 10000000 10000000 80 80 0}
+I1201 16:49:51.810861 03098 vip_mgo_config.go:48] ==>VipPriceConfigManager.Init in.
+I1201 16:49:51.811110 03098 vip_mgo_config.go:59] ==>vipPrice_config:&{VIP4 300000 10 4 888 8500000}
+I1201 16:49:51.811135 03098 vip_mgo_config.go:59] ==>vipPrice_config:&{VIP3 200000 10 3 588 5000000}
+I1201 16:49:51.811149 03098 vip_mgo_config.go:59] ==>vipPrice_config:&{VIP2 50000 10 2 188 1500000}
+I1201 16:49:51.811163 03098 vip_mgo_config.go:59] ==>vipPrice_config:&{VIP1 10000 10 1 28 150000}
+I1201 16:49:51.811177 03098 vip_mgo_config.go:59] ==>vipPrice_config:&{VIP5 500000 10 5 1288 11500000}
+I1201 16:49:51.811190 03098 vip_mgo_config.go:59] ==>vipPrice_config:&{VIP6 800000 10 6 1688 14500000}
+I1201 16:49:51.813113 03098 slot_global.go:41] SlotGlobal init ok >>>>>>
+I1201 16:49:51.813135 03098 slot_global.go:42] 2015-12-01
+I1201 16:49:51.813144 03098 slot_global.go:43] 20100000
+I1201 16:49:51.813153 03098 slot_global.go:44] SlotGlobal init end <<<<<<
+gc7(1): 2+0+736+1 us, 0 -> 0 MB, 6086 (8737-2651) objects, 17 goroutines, 81/0/0 sweeps, 0(0) handoff, 0(0) steal, 0/0/0 yields
+gc8(1): 1+0+837+1 us, 0 -> 0 MB, 8438 (17524-9086) objects, 17 goroutines, 94/0/0 sweeps, 0(0) handoff, 0(0) steal, 0/0/0 yields
+gc9(1): 0+0+450+0 us, 0 -> 0 MB, 24473 (46477-22004) objects, 17 goroutines, 145/0/0 sweeps, 0(0) handoff, 0(0) steal, 0/0/0 yields
+gc10(1): 0+0+595+0 us, 0 -> 0 MB, 18021 (60730-42709) objects, 17 goroutines, 145/0/0 sweeps, 0(0) handoff, 0(0) steal, 0/0/0 yields
+gc11(1): 0+0+763+0 us, 0 -> 1 MB, 29764 (83615-53851) objects, 17 goroutines, 180/0/0 sweeps, 0(0) handoff, 0(0) steal, 0/0/0 yields
+gc12(1): 1+0+911+0 us, 1 -> 2 MB, 60101 (141804-81703) objects, 17 goroutines, 275/0/0 sweeps, 0(0) handoff, 0(0) steal, 0/0/0 yields
+gc13(1): 0+0+953+0 us, 1 -> 2 MB, 70739 (212252-141513) objects, 17 goroutines, 290/1/0 sweeps, 0(0) handoff, 0(0) steal, 0/0/0 yields
+gc14(1): 1+0+1157+0 us, 1 -> 2 MB, 37584 (223811-186227) objects, 17 goroutines, 292/0/0 sweeps, 0(0) handoff, 0(0) steal, 0/0/0 yields
+I1201 16:49:51.882818 03098 ranking_item.go:81] ====>加载排行榜:&{{{0 0} 0 0 0 0} 1 30 [0xc208272200] 2015-12-01 09:47:32.362 +0800 CST} err:<nil>
+I1201 16:49:51.883210 03098 ranking_item.go:81] ====>加载排行榜:&{{{0 0} 0 0 0 0} 2 30 [0xc2081c4040] 0001-01-01 00:00:00 +0000 UTC} err:<nil>
+I1201 16:49:51.883371 03098 ranking_item.go:81] ====>加载排行榜:&{{{0 0} 0 0 0 0} 3 30 [0xc2081c40c0 0xc2081c4100] 2015-11-30 09:55:03.61 +0800 CST} err:<nil>
+I1201 16:49:51.883548 03098 ranking_item.go:81] ====>加载排行榜:&{{{0 0} 0 0 0 0} 4 30 [0xc2081c4340 0xc2081c4380] 0001-01-01 00:00:00 +0000 UTC} err:<nil>
+I1201 16:49:51.883752 03098 ranking_item.go:81] ====>加载排行榜:&{{{0 0} 0 0 0 0} 5 30 [0xc2081c4800 0xc2081c4840 0xc2081c4880 0xc2081c48c0 0xc2081c4900 0xc2081c4940 0xc2081c4980 0xc2081c49c0 0xc2081c4a00] 2015-12-01 09:47:32.362 +0800 CST} err:<nil>
+I1201 16:49:51.884017 03098 ranking_item.go:81] ====>加载排行榜:&{{{0 0} 0 0 0 0} 6 30 [0xc20823cf40 0xc20823cf80 0xc20823cfc0 0xc20823d000 0xc20823d040 0xc20823d0c0 0xc20823d100 0xc20823d140 0xc20823d180 0xc20823d1c0] 0001-01-01 00:00:00 +0000 UTC} err:<nil>
+I1201 16:49:51.884281 03098 ranking_item.go:81] ====>加载排行榜:&{{{0 0} 0 0 0 0} 7 30 [0xc208194bc0 0xc208194c00 0xc208194c40 0xc208194c80 0xc208194cc0 0xc208194d00 0xc208194d40 0xc208194d80 0xc208194dc0 0xc208194e00 0xc208194e40 0xc208194e80 0xc208194ec0 0xc208194f00] 2015-11-30 09:55:03.61 +0800 CST} err:<nil>
+I1201 16:49:51.884579 03098 ranking_item.go:81] ====>加载排行榜:&{{{0 0} 0 0 0 0} 8 30 [0xc20813ff40 0xc20813ff80 0xc20813ffc0 0xc20800a040 0xc20800a240 0xc20800a400 0xc20800a440 0xc20800a640 0xc20800a680 0xc20800a880 0xc20800a9c0 0xc20800aa40 0xc20800aa80] 0001-01-01 00:00:00 +0000 UTC} err:<nil>
+I1201 16:49:51.884945 03098 ranking_item.go:81] ====>加载排行榜:&{{{0 0} 0 0 0 0} 9 30 [0xc208149bc0 0xc208149c00 0xc208149c40 0xc208149c80 0xc208149cc0 0xc208149d00 0xc208149d40 0xc208149d80 0xc208149dc0 0xc208149e00 0xc208149e40 0xc208149e80 0xc208149ec0 0xc208149f00 0xc208149f40 0xc208149f80 0xc208149fc0 0xc208110000 0xc208110040 0xc208110080 0xc2081100c0 0xc208110100 0xc208110140 0xc208110180 0xc2081101c0 0xc208110200 0xc208110240] 0001-01-01 00:00:00 +0000 UTC} err:<nil>
+I1201 16:49:51.885349 03098 ranking_item.go:81] ====>加载排行榜:&{{{0 0} 0 0 0 0} 10 30 [0xc2081c0cc0 0xc2081c0d00 0xc2081c0d40 0xc2081c0d80 0xc2081c0dc0 0xc2081c0e00] 0001-01-01 00:00:00 +0000 UTC} err:<nil>
+I1201 16:49:51.885558 03098 rand_bugle.go:102] LoadNames ok. names=[﻿liulxhlxh gclxh2004 guchunlin gcxj123 我是随意清风 gclxx 耳东王林 jpuhong 我爱二狗子 gclxyh gucang seacat2009 歌唱了一半 gclyc gclyg8 njioplkm clygz rzk91197 wynner2006 gclyp128019 gclyuki 宇天liana 船chuan123 好抽一根烟 gclz123456 港城浪子123 gcofy1234 gclz2000 gclz8888 xiaozhi213 气人00 依旧汽酒 gxlzd siex gclzgenghx gclzi 存在west 情人知已007 gclzq 微笑淡然恬静如花 鑫_磊 laizhenzhong mike0903 gcm_boy 123啦啦啦123 星月荷风 88859120 阿莲丽 6789098 情人_人生如梦 gzlgcm 高山游水 花儿为我开 统娴园 n160 寻亲随笔 浪太清 告别悲哀 gcm_01 古城名 顾彩梅 不黑酸菜鱼 s190000 gongchuanming Irene123abc 宝贝的双鱼 wirson gcm008 mable99 张庆庆 河边的船 gcm007500 gcm0205 gcm0210 gcm0211 alex_guan 我生命中的生命 gcm0510 gcm615 dianda110 紫灵f gcm0620 gcm08 落影无踪 hero1314521 大话小子 GCM1001 gcmyjr2007 走地九段 gcm1102 gongchangming baobeiqiao2009 zhangling328 开心含苞 翩翩君 gcm122 mzgcm gcm123123 gcm26 gcm1234 小高xiao 灿烂de笑 gcm1366651 fairytale2010 442567422 卧_靠 枯叶蝶jug gcm168 xzjr2008 桂CM1801 GCMYBLY 梦游客189 sky5494 看幸福享人生 gcm2010 gcm123 gongcongming 波洒一方 dongge00 gcm0202 一剑飘风825 gcm1993926 小宝456123 gcm2 gcm20041210 gcm2007 老实人01 川川 樟树味茉莉香 执子之手与子童老 山天001 不必太专业 桂昌敏 gcm204742 gcm211 我是monica2008 gcm228 gcm251314 苦撑的心 gcm315 hamlet12 gcm326 gcm3366 gcm38315 gcm4359558 gcm_215 宫长明ABC 大杜鹃 爱情十字架 德铃内衣 gcm0411 gcm580708 烟花de宿命1314 gcmtycom 在岁而动 成梅 lcm602 gcm608 gzf6248 gcm627 gcm646 lgy77 gcm66 应该有点内涵 gcm6610 11gcm11 tyxz2009 gcm6677 gcm66882010 1.9831E+11 gcm67 gcm68 gcm7054 gcm77 dai8560545 gcm8048 q172272560 gcm8 lei811641 gcm8431274 gcmyy8687 gcm88 zz_2009 落点 gcm92 dianhua0000 潮湿之旅 1264656128 sgge9hd2acfh4d simafeima gcshken gcman1988 春天的瞬间 gcmaoyq gcmartin 我来卖酱油的 gcmary gcm009 max31 沙逸 2n4c3c4kp93lors qhxs 国产迈巴赫 gcmblt gcmboss gcmboy 郭气气 高水井 gcmch firer2008 gcmcjie qingdawenbo upfhmznwo gcmcyj gcmd zelia123 gcmdcmd J_cosco gcmeaem 不言欢 gcmei1980 362289994 鬼城美女 gcmesd gcmfx 东港小龚 ggccmm gcmgcmgcm 春江梅雨 电子管后 gcmgu 网上代理兼职 wenhep 接锯 南枫情怀 联系QQ138709955 风路人 gcmhao gcmhappy123 gcmhcy gcmhello 修罗祭 雁鹫鵰狸狮狒 gcmhl 我找我儿子 gcmhn1 gcmhn gcmhw gcmh xinyousuoyi gcmi7896 gcmigyn gcmin gctdxy 咖啡明 gcming123 中国人11 中国人88 gcming 守望东方 快乐赚钱赚钱快乐 skob2kk 穿个股市马甲 共产马甲1号 共产马甲2号 gcmj_java 都靠左边 gcmj2000 紫木偶 安逸儿 丁宜 A计划第三季 wangshicheng 太阳的另一面 gcmk2 白发三千丈2009 你02 非得柱册才能说 葛城美里1028 dy6bcc2jxnqsw1d 古城梦里的云 gcmlfl 看what看 gcmlife first_try bluesky1224 gcmlt gcmltz 冰封爱 gcmlwy gcmm_00 gcmm313428 我是谁太无聊 G_C_M_M 心风吹 想当妖精的女人 不吊死在一棵树上 美gcm美 gcm1963 弓长某 吕林贵 GCMPA4NGZ36I9JQ4 gcmpbda gcmqo 郭宸铭 gcms0135 喜欢一个笨笨的人 aniuuu gcmsft gcmshj jianzhijob kyw001 gcmslz wxloveyou 馋者殁 冈漫 gcmtma gcmtpqg0 rabbit_kao george1993 gcmu3b YY的歪歪 burgrave gwongbok Ginbok gwongbok3 蚊子变青蛙 王八变青蛙 几段情歌 你做乜挑衅我 打击弱势群体 间谍情深 我是一名坐街 空谷无音73 minycat 雨柔_1018 gcmwh 大海中的八爪鱼 ˊ過祛 gcmwq GCMWQ888 gcmwq8888 云海风茗 gcmwulikanwu 轻鸿飞天 gcmxr767 251394523 江北崽儿 笨猪germ nizhanghua gcmy215 gcmyangyang gcmyc 笑谈醉梦中 gcmydream gcmygcmy gcmtylt 山东方舟 gc1995 明月当空888 紫竹韵 gcmyt steelcn 鱼小泡_Ashley GCMYCF gcmyzc GC文主 meixuefeiyang jiuyandaming 爱老公一生 nalanqingfeng gcmzm 娃哈哈gcn91 娃哈哈gcn 上海博乐 飞雪如云 热点信息 gcn0atn 娱乐爆料 ncgncg7 24540 明月心如镜 光才能 华夏商务撰稿 gcn1984 康乃馨催乳 血色浪漫1988 a璨 无奈甩子 无码视频 jonathan-83 437593865 gcn23 全去全 411211255 gcn28909 89gcn epdbyb1 gcn5 随心所宜 simonge gcn8 gechaonan yunhai8833 笑哈哈777 gcn987654 gcn988 7743431 6sq3 晒太阳的大猫 gcnca9xc toyotacamry oliverlsgao gcncf15 gcnci gcncxys gcncy gsh4782 gcndghz ggg_www nftmxk 耿枫 gcng1 vuvuhh 最爱狮子的头 五更天1 北京五更天 后羿射日了 gcnhgy 猪八戒爱使耙 我不是国安球迷 gcnian 大灰狼2009ABC gcnick axu1948 gcnihao 高楚凝 34532TED 藜叶草 gcnizi 明蓝色 不愿沉睡着 gcnjat fgynxp JBVKIE G_NJU_SIMPLAN gcnk 套牢深深深几许 gcnm 冈才 冰水的我 gcnn550000 卞惠 九M 放大比v gcno9h 这边俏风景 baoutao aicwuu 广昌康佳诺基亚 mynokyi gcnokiy gcnokyi gcnpbnx 夜色狰狞 等你来了我就闪 秋羽轩轩 顶好锅盖再回帖 haveatrip xuxiangxiang rtfd3e6m 两头想回家的小猪 娃哈哈gcnt gcntaz gcntjnwtz gcnud699 减肥1234567 gcnv gcnw gcnwtw fchzdfh GCNY009 七颜色彩虹 这个可以刺 外星ET tideguo10 潮姐 gco 陕gco0513 gc0513 gcp0716 gco3aiaa gco9a gco9f gco9o gcoa gcoa7 gcobble 奥巴马光说不练 怪COCO gcocun asgasg 小小一头蒜 天才神三 我把思念拧 顶贴全自动 gcodxg 野渡嘿咻舟自横 草泥马的喝血社会 gcoekv 铱然两袖清风 gcoffice gcoge05 gcoil gcoin78 gcoiti gcokboy 小鱼鱼6688 gcokok6688 目标型男 gcolong gcolwhx htfdbdrfvd gcomh ACpirlo pirlomilan gen1987 icomic 流过泪的眼睛 gconey gconey32767 千金欲发 恋爱无所谓 蜗牛比慢较 g静听花开 gconghui 高聪聪同学 wcy110119 Harryharry2009 feilinshi2009 gcookie gbhfy gcool178 gogocool 大凡星 gcoolb 宝宝儿子 totomonoki 57236732 gcooud 美川酷头子 gcopt 海豚珍妮 莱德蜜蜜 gcopxro39 k8u62gm gcorgdum wendychen320 gcorn957 qseasd1942 异乡飘零的落叶 copy5l8 小高啊小高 幼稚过后卡壳 guzihua jielllonza gcotyc gcou gclhzx gcoukvvs gcove 点亮脐橙树 见马瞅心 fxlfxl123 金牛1973 gcowevq 社会中大学生 tyhuai gcpcatherine yinnv gcp57134 mong360402097 gcp17 anyu1101 a344975796 gcp1986 gcp_2000 渺茫的过去 gcp_xp suiyifeng331 fed007 gcp009 古墙上青藤蔓蔓 花铃子 gcp0301 飞天小蟊贼 gcp036139 gcp0366 gch2008 胡涂mama 我是路过而已 gcp0816 老鼠两只 天涯方 gold77 gcp1225 dazhonghr 宁馨儿521 gcp135 gcp13951405892 gp1573 关妮妮 gcp1818 gcp1126 gcp1936 gengcp gcp110 gcp1974 gcp1978 丑鬼大人 gcp19800 gcp1980 Jack_GeChunPing gcp1984 silver的春天 datiao1988 azada 素颜极星 gcp2000 intx 8501815 gcp2008111 想认真负责 正气存内 gcp241 批发并收购旧杂志 GCP24 gcp27 gcp2cbq gcp2gj gcp2hl gcp302 Christey5 gcp328 北纬117度 gcp4 谈谈情聊聊性 清贫果 家在龙马 破我执gcp gcp4mz5 姜皮子蚂蚱 gcp611021 gcp63579 gcp6523 O31503 笑对人生2 gcp6677 gcp1989 汉唐妮儿 gcp790404 龙城展氏 dlbthesea1112 观潮派 gcp860817 囚唯一 gcp88885401 gcp885401 gcp8888 gcp9167 gcp951 会跳舞的蛇114 judy_gcp selinago jaymachi owlcity1987 GCPARTYWBD gcpaul gcpb79 蓝色的风雨 小飞熊 蓝小飞 tr24353 hhjjssdd wscqrgcp 7.20203E+13 CZ超仔 高层瓢窗 高层瞟窗 花花龚子 玉弓云海 eskoqtg kishun 雪底沉冰 gcpengze gcper 霓裳师傅 ggccpp gcphns TYFXGCPHZH gcpi2 gcping123 O_le了 gcpingfan roden8865 snikes84 gcpiza gcpjdc gcpjj123 victorAwoo gcpka 第十八支烟 恋雨的人00 gcplc gc2222 gcpleasant 一起裸奔吧 一只小小鸟啊 沉默的味道 hgty5u4y9j6p gcplp zs8126732 gcpmbg cgkybujka 853730375 寻梦四海 gcpnzp 我是二婚句号 我是红杏问号 我是再嫁感情号 老是老味道好 漂过来一对奶 老是老味道也好 hy19730401 死撑的鱼 水木鸟鱼 5gps8i3ymql1nc4 不夜的天空 张君壁 vielot_pqs 498929zxc 那时的天空_sun ynwar chan552009 gcpunk GCPUY东东 gcpvjd 敢吃螃蟹 gcpyeq ty11701 gcpzh2001 gcpzyl 雪女孩2005 高春强 pestge robcom gcq228298 gcqtzh mimim 叫主管部门搞乱了 JIAFUJIANKANG gcq2008 435t34t GCQ_qufu gcq_sd 饭局2006 aleda 屁眼 gcq009 百无聊赖2010 gaoningjing gcq0204 XIAOGUO1001 gcq0453 gcq0523 红线区 bingwuqingwqing 简凡007 二三拐角 黑色流年 gcq102 gcq10203040 gcq1025 sd104 yuliujun gcq109 419456 gaocq xiaost 认识你真好3 草心依旧 gcqknight gcq1200 gcq1200ABC gcq15123 gcq1210 g990100 gg443636585 newdove 蝈蝈不被鸟吃 guigui03 gcq1233 gcq123456_a gcq123456_g ggccqq juchenqi gcq130 春风梦青 怎么看清楚 gcq8888 gcq1969 欣欣1996 qingxin1974 gcqcfl sdgcq 无望无助 齐风齐雨 pleasantKing 山地谦 文武德 gcq_fujitsu gcq19840820 totti442 gcqgcq1985 格格调他哥 gcq_1990 yjct luke20031201 gaocq2003 13909100518 gcq20041129 gcq_2005 琴影2012 小琴2012 紫影月儿 吴耐仁 gcq250440 级q12 gcq225 gcq285 g715923 gcq351007 山里人SP guochangqi gcqtyy 猫猫咪啊 gao1987000 mars45 零落梅花 小月18 游龙情侠gcq gcq5 gcq512 戈超群 独-爱 南溪笑忘 5810872 odilegu gcq621900 guoqqq xk999 知足常乐_9 gangwanxiaoqi gcq2009 gcq711229 gcq7481321 一点盐 龚秋 gcq777 gcq7799 rft7860062 gcq791909 gcq98 gcq810 林泉隐逸 爱拼CAI会赢 地雷84 wd841123 gcq85977 小KK_ gggcccqqq GCQ]
+I1201 16:49:51.886448 03098 server.go:64] ===>启动Game服务:8002
+I1201 16:50:00.611807 03098 session.go:61] ===>打开session:&{0xc2081de000 192.168.1.17 0xc20802ca80 <nil> false 0xc20802cae0 {{0 0} 0} {{0 0} 0} <nil>}
+I1201 16:50:00.632399 03098 re_connect_handler.go:17] ReConnectHandler in.
+I1201 16:50:00.632489 03098 re_connect_handler.go:27] ===>User ReConnect,userId=QF10000088
+I1201 16:50:00.632516 03098 re_connect_handler.go:31] User not Reconnect, id=QF10000088
+I1201 16:50:00.652548 03098 login_handler.go:46] ===>用户登录消息sess:&{0xc2081de000 192.168.1.17 0xc20802ca80 <nil> false 0xc20802cae0 {{0 0} 0} {{0 0} 0} <nil>} msg:username:"863727020762484" userpwd:"863727020762484" nickname:"HUAWEI Y618-T00" channelId:"beta" model:"HUAWEI Y618-T00" versionName:"V1.0.1" 
+I1201 16:50:00.653227 03098 login_handler.go:60] ==>查找用户username:863727020762484 err:<nil> u:&{QF10000088 863727020762484 2f8525e2b26155fb950c7b0c763b96eb HUAWEI Y618-T00 2  5 false 0 0 0 0 0 0001-01-01 00:00:00 +0000 UTC 0 2015-12-01 15:19:01.2 +0800 CST beta     0 0001-01-01 00:00:00 +0000 UTC false false 0001-01-01 00:00:00 +0000 UTC false 0001-01-01 00:00:00 +0000 UTC false 0001-01-01 00:00:00 +0000 UTC 0 0001-01-01 00:00:00 +0000 UTC false 0 false false HUAWEI Y618-T00 200 2015-12-01 15:19:01.204 +0800 CST false V1.0.1}
+I1201 16:50:00.656638 03098 login_handler.go:183] ==>玩家登录成功userId:QF10000088 deviceId: sessKey:565d5f3842dd010c1a000001 sess:&{0xc2081de000 192.168.1.17 0xc20802ca80 <nil> false 0xc20802cae0 {{0 0} 0} {{0 0} 0} <nil>}
+I1201 16:50:00.656874 03098 login_handler.go:216] ===>登录结果:成功userId:QF10000088 sess:&{0xc2081de000 192.168.1.17 0xc20802ca80 0xc208101ba0 true 0xc20802cae0 {{0 0} 0} {{0 0} 0} 0x60e5e0}
+I1201 16:50:00.706729 03098 get_shop_logs_handler.go:18] GetShopLogsHandler, logs=[]
+I1201 16:51:13.885951 03098 rand_bugle.go:87] buildBugleMsg ok. msg=恭喜gcp0366玩家在菜鸟场单场赢得177461金币
+I1201 16:51:33.548489 03098 session.go:61] ===>打开session:&{0xc2081de090 192.168.1.16 0xc20802dda0 <nil> false 0xc20802de00 {{0 0} 0} {{0 0} 0} <nil>}
+I1201 16:51:33.588041 03098 login_handler.go:46] ===>用户登录消息sess:&{0xc2081de090 192.168.1.16 0xc20802dda0 <nil> false 0xc20802de00 {{0 0} 0} {{0 0} 0} <nil>} msg:username:"15110247349" userpwd:"123456" channelId:"beta" model:"" versionName:"V1.0.1" isSwitchAccount:false 
+I1201 16:51:33.588516 03098 login_handler.go:60] ==>查找用户username:15110247349 err:<nil> u:&{QF10000083 15110247349 cdcb32de6546125198062a1a6650566f SM-G7108V 1  7 false 0 0 0 0 0 0001-01-01 00:00:00 +0000 UTC 0 2015-11-30 16:38:44.622 +0800 CST      0 0001-01-01 00:00:00 +0000 UTC false false 0001-01-01 00:00:00 +0000 UTC false 0001-01-01 00:00:00 +0000 UTC false 0001-01-01 00:00:00 +0000 UTC 0 0001-01-01 00:00:00 +0000 UTC false 0 false false SM-G7108V 200 2015-12-01 09:46:40.806 +0800 CST false }
+I1201 16:51:33.592163 03098 login_handler.go:183] ==>玩家登录成功userId:QF10000083 deviceId: sessKey:565d5f9542dd010c1a000002 sess:&{0xc2081de090 192.168.1.16 0xc20802dda0 <nil> false 0xc20802de00 {{0 0} 0} {{0 0} 0} <nil>}
+I1201 16:51:33.592466 03098 login_handler.go:216] ===>登录结果:成功userId:QF10000083 sess:&{0xc2081de090 192.168.1.16 0xc20802dda0 0xc208418270 true 0xc20802de00 {{0 0} 0} {{0 0} 0} 0x60e5e0}
+I1201 16:51:33.638710 03098 get_shop_logs_handler.go:18] GetShopLogsHandler, logs=[]
+I1201 16:51:37.224154 03098 enter_game_handler.go:14] EnterGameHandler in.
+gc15(4): 3+11+1335+5 us, 1 -> 2 MB, 46508 (244505-197997) objects, 26 goroutines, 402/231/0 sweeps, 30(481) handoff, 6(14) steal, 132/49/11 yields
+I1201 16:51:37.224473 03098 game_item.go:362] ====>DeskInfo:userList:<baseInfo:<userId:"QF10000083" nickName:"SM-G7108V" gender:BOY signiture:"" photoUrl:"7" gold:298756 diamond:0 gameScore:0 matchRecord:<playWinCount:2 playTotalCount:4 theDayWinGold:0 theWeekWinGold:-3800 maxCards:38 maxCards:25 maxCards:12 > isBind:false vipLevel:0 vipStartTime:-62135596800 vipValidDays:0 exp:4 lastGainVipPrizeTime:-62135596800 luckyValue:200 isBindAddress:false isRobot:false dailyGiftBagUseTime:-62135596800 subsidyPrizeTimes:3 lastPayTime:-62135596800 gainedFirstRechargeBonus:false charm:2 vipTaskList:<level:3 state:0 prizeGold:200000 startTime:0 endTime:0 > vipTaskList:<level:2 state:0 prizeGold:50000 startTime:0 endTime:0 > vipTaskList:<level:1 state:0 prizeGold:10000 startTime:0 endTime:0 > vipTaskList:<level:5 state:0 prizeGold:500000 startTime:0 endTime:0 > vipTaskList:<level:6 state:0 prizeGold:800000 startTime:0 endTime:0 > vipTaskList:<level:4 state:0 prizeGold:300000 startTime:0 endTime:0 > horn:0 safeBox:<isOpen:true savings:276544 isSetPwd:true boxlogs:<reason:"\345\255\230\346\254\276" gold:60000 savings:96544 datetime:"2015-12-1 15:57:00" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:110000 datetime:"2015-11-30 17:42:22" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:246544 datetime:"2015-12-1 16:09:39" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:296544 datetime:"2015-12-1 16:21:22" > boxlogs:<reason:"\345\255\230\346\254\276" gold:30000 savings:36544 datetime:"2015-12-1 15:56:52" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:120000 datetime:"2015-11-30 17:44:08" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:286544 datetime:"2015-12-1 16:10:10" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:256544 datetime:"2015-12-1 16:09:41" > boxlogs:<reason:"\345\255\230\346\254\276" gold:40000 savings:176544 datetime:"2015-12-1 16:03:53" > boxlogs:<reason:"\345\217\226\346\254\276" gold:-10000 savings:46544 datetime:"2015-12-1 15:54:09" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:266544 datetime:"2015-12-1 16:09:42" > boxlogs:<reason:"\345\217\226\346\254\276" gold:-10000 savings:276544 datetime:"2015-12-1 16:24:02" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:186544 datetime:"2015-12-1 16:06:58" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:130000 datetime:"2015-11-30 17:45:38" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:276544 datetime:"2015-12-1 16:09:45" > boxlogs:<reason:"\350\265\240\351\200\201\346\211\243\346\254\276" gold:-10000 savings:286544 datetime:"2015-12-1 16:23:21" toUid:"QF10000066" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:196544 datetime:"2015-12-1 16:09:21" > boxlogs:<reason:"\345\217\226\346\254\276" gold:-123456 savings:6544 datetime:"2015-12-1 15:42:53" > boxlogs:<reason:"\345\255\230\346\254\276" gold:50000 savings:56544 datetime:"2015-12-1 15:53:59" > boxlogs:<reason:"\345\255\230\346\254\276" gold:40000 savings:136544 datetime:"2015-12-1 15:57:23" > boxlogs:<reason:"\345\255\230\346\254\276" gold:30000 savings:36544 datetime:"2015-12-1 15:46:12" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:206544 datetime:"2015-12-1 16:09:23" > boxlogs:<reason:"\345\217\226\346\254\276" gold:-10000 savings:296544 datetime:"2015-12-1 16:22:01" > boxlogs:<reason:"\350\265\240\351\200\201\346\211\243\346\254\276" gold:-10000 savings:26544 datetime:"2015-12-1 15:55:17" toUid:"QF10000066" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:216544 datetime:"2015-12-1 16:09:33" > boxlogs:<reason:"\345\217\226\346\254\276" gold:-10000 savings:306544 datetime:"2015-12-1 16:21:37" > boxlogs:<reason:"\345\217\226\346\254\276" gold:-10000 savings:36544 datetime:"2015-12-1 15:54:10" > boxlogs:<reason:"\345\217\226\346\254\276" gold:-10000 savings:26544 datetime:"2015-12-1 15:47:30" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:226544 datetime:"2015-12-1 16:09:36" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:316544 datetime:"2015-12-1 16:21:27" > boxlogs:<reason:"\345\217\226\346\254\276" gold:-10000 savings:16544 datetime:"2015-12-1 15:47:37" > boxlogs:<reason:"\345\217\226\346\254\276" gold:-10000 savings:6544 datetime:"2015-12-1 15:56:39" > boxlogs:<reason:"\345\217\226\346\254\276" gold:-10000 savings:6544 datetime:"2015-12-1 15:47:39" > boxlogs:<reason:"\345\255\230\346\254\276" gold:100000 savings:100000 datetime:"2015-11-30 17:13:56" > boxlogs:<reason:"\345\217\226\346\254\276" gold:-10000 savings:16544 datetime:"2015-12-1 15:56:34" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:236544 datetime:"2015-12-1 16:09:38" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:306544 datetime:"2015-12-1 16:21:25" > > > putIntoGold:0 isPlaying:false isSeenCard:false isGiveUp:false pos:1 isReady:false isFailed:false isUseDoubleCard:false forbidCompareCardRound:0 useReplaceCardCount:0 betPond:0 > putIntoTotalGold:0 singlePutIntoGold:0 currentRound:0 maxRound:20 totalBetPond:0 wanRenWaitingBetTime:-62135596800 curTurnUserId:"" curTurnTime:-62135596800 lastEndTime:-62135596800 
+I1201 16:51:39.228251 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2081780f4
+I1201 16:51:40.228256 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20829e584
+I1201 16:51:41.228334 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208270fc4
+I1201 16:51:42.228418 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208174c84
+I1201 16:51:43.228584 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20819e364
+I1201 16:51:44.228700 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208176874
+I1201 16:51:45.228863 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20825a114
+I1201 16:51:46.228963 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20825bf64
+I1201 16:51:47.229009 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2081738d4
+I1201 16:51:48.229114 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208313e64
+I1201 16:51:49.229224 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20830fa04
+I1201 16:51:50.229347 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208257704
+I1201 16:51:51.229472 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20830d2c4
+I1201 16:51:52.229554 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208305e04
+I1201 16:51:53.229681 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20826b154
+I1201 16:51:54.229846 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208264884
+I1201 16:51:55.229926 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208187c74
+I1201 16:51:56.230037 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20827cf94
+I1201 16:51:57.230101 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20817d184
+I1201 16:51:58.230221 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20816a044
+I1201 16:51:59.230345 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208160004
+I1201 16:52:00.230426 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208167454
+I1201 16:52:01.230565 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208157984
+I1201 16:52:02.230688 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208146c54
+I1201 16:52:03.230777 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2081533f4
+I1201 16:52:04.230943 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208159304
+I1201 16:52:05.230967 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20811eeb4
+I1201 16:52:06.231042 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208142e14
+I1201 16:52:07.231165 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2080d8814
+I1201 16:52:08.231256 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2080fca74
+I1201 16:52:09.231371 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208113a74
+I1201 16:52:10.231503 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2080f4f44
+I1201 16:52:11.231560 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2080f3794
+I1201 16:52:12.231652 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20819cd94
+I1201 16:52:13.258608 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2080eb014
+I1201 16:52:14.231976 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208302334
+I1201 16:52:15.232000 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082ff7d4
+I1201 16:52:16.232146 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2083036b4
+I1201 16:52:17.232203 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082f0204
+I1201 16:52:18.232307 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082f84f4
+I1201 16:52:19.232433 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082ecb44
+I1201 16:52:20.232522 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082e81f4
+I1201 16:52:21.232635 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082ed6d4
+scvg0: inuse: 4, idle: 0, sys: 5, released: 0, consumed: 5 (MB)
+I1201 16:52:22.232682 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082e2a64
+I1201 16:52:23.232856 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082e6384
+I1201 16:52:24.232973 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082e97b4
+I1201 16:52:24.886155 03098 rand_bugle.go:87] buildBugleMsg ok. msg=恭喜gch2008获得了特权3权限！领取魅力值到商场兑换心仪的礼品！
+I1201 16:52:25.233079 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082cff34
+I1201 16:52:26.233154 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082c9c04
+I1201 16:52:27.233234 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082c4ab4
+I1201 16:52:28.233335 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082c38a4
+I1201 16:52:29.233455 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082c5c64
+I1201 16:52:30.233561 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082bfa74
+gc16(4): 22+9+1421+160 us, 1 -> 2 MB, 55842 (289694-233852) objects, 26 goroutines, 463/371/0 sweeps, 15(350) handoff, 8(19) steal, 86/50/12 yields
+I1201 16:52:31.233713 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20829e4e4
+I1201 16:52:32.233825 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20829f934
+I1201 16:52:33.233938 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082bae34
+I1201 16:52:34.234089 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208174224
+I1201 16:52:35.234230 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208177684
+I1201 16:52:36.234262 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208179714
+I1201 16:52:37.234386 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20819d1c4
+I1201 16:52:38.234461 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20819a6c4
+I1201 16:52:39.234582 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20825a394
+I1201 16:52:40.234711 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208270244
+I1201 16:52:41.234810 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208256ec4
+I1201 16:52:42.234903 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208312454
+I1201 16:52:43.235002 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20819edf4
+I1201 16:52:44.235162 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20830ece4
+I1201 16:52:45.235230 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2083023a4
+I1201 16:52:46.235351 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20830c3d4
+I1201 16:52:47.235406 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082fee14
+I1201 16:52:48.235556 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082fc454
+I1201 16:52:49.235665 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20830d894
+I1201 16:52:50.235784 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082ec0f4
+I1201 16:52:51.235861 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082ed714
+I1201 16:52:52.235952 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082e95a4
+I1201 16:52:53.236068 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082f11a4
+I1201 16:52:56.172414 03098 enter_game_handler.go:14] EnterGameHandler in.
+I1201 16:52:56.172674 03098 game_item.go:362] ====>DeskInfo:userList:<baseInfo:<userId:"QF10000083" nickName:"SM-G7108V" gender:BOY signiture:"" photoUrl:"7" gold:298756 diamond:0 gameScore:0 matchRecord:<playWinCount:2 playTotalCount:4 theDayWinGold:0 theWeekWinGold:-3800 maxCards:38 maxCards:25 maxCards:12 > isBind:false vipLevel:0 vipStartTime:-62135596800 vipValidDays:0 exp:4 lastGainVipPrizeTime:-62135596800 luckyValue:200 isBindAddress:false isRobot:false dailyGiftBagUseTime:-62135596800 subsidyPrizeTimes:3 lastPayTime:-62135596800 gainedFirstRechargeBonus:false charm:2 vipTaskList:<level:5 state:0 prizeGold:500000 startTime:0 endTime:0 > vipTaskList:<level:6 state:0 prizeGold:800000 startTime:0 endTime:0 > vipTaskList:<level:4 state:0 prizeGold:300000 startTime:0 endTime:0 > vipTaskList:<level:3 state:0 prizeGold:200000 startTime:0 endTime:0 > vipTaskList:<level:2 state:0 prizeGold:50000 startTime:0 endTime:0 > vipTaskList:<level:1 state:0 prizeGold:10000 startTime:0 endTime:0 > horn:0 safeBox:<isOpen:true savings:276544 isSetPwd:true boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:306544 datetime:"2015-12-1 16:21:25" > boxlogs:<reason:"\345\217\226\346\254\276" gold:-10000 savings:6544 datetime:"2015-12-1 15:47:39" > boxlogs:<reason:"\345\255\230\346\254\276" gold:100000 savings:100000 datetime:"2015-11-30 17:13:56" > boxlogs:<reason:"\345\217\226\346\254\276" gold:-10000 savings:16544 datetime:"2015-12-1 15:56:34" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:236544 datetime:"2015-12-1 16:09:38" > boxlogs:<reason:"\345\255\230\346\254\276" gold:60000 savings:96544 datetime:"2015-12-1 15:57:00" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:110000 datetime:"2015-11-30 17:42:22" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:246544 datetime:"2015-12-1 16:09:39" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:296544 datetime:"2015-12-1 16:21:22" > boxlogs:<reason:"\345\255\230\346\254\276" gold:30000 savings:36544 datetime:"2015-12-1 15:56:52" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:120000 datetime:"2015-11-30 17:44:08" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:286544 datetime:"2015-12-1 16:10:10" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:256544 datetime:"2015-12-1 16:09:41" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:186544 datetime:"2015-12-1 16:06:58" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:130000 datetime:"2015-11-30 17:45:38" > boxlogs:<reason:"\345\255\230\346\254\276" gold:40000 savings:176544 datetime:"2015-12-1 16:03:53" > boxlogs:<reason:"\345\217\226\346\254\276" gold:-10000 savings:46544 datetime:"2015-12-1 15:54:09" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:266544 datetime:"2015-12-1 16:09:42" > boxlogs:<reason:"\345\217\226\346\254\276" gold:-10000 savings:276544 datetime:"2015-12-1 16:24:02" > boxlogs:<reason:"\345\255\230\346\254\276" gold:50000 savings:56544 datetime:"2015-12-1 15:53:59" > boxlogs:<reason:"\345\255\230\346\254\276" gold:40000 savings:136544 datetime:"2015-12-1 15:57:23" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:276544 datetime:"2015-12-1 16:09:45" > boxlogs:<reason:"\350\265\240\351\200\201\346\211\243\346\254\276" gold:-10000 savings:286544 datetime:"2015-12-1 16:23:21" toUid:"QF10000066" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:196544 datetime:"2015-12-1 16:09:21" > boxlogs:<reason:"\345\217\226\346\254\276" gold:-123456 savings:6544 datetime:"2015-12-1 15:42:53" > boxlogs:<reason:"\345\255\230\346\254\276" gold:30000 savings:36544 datetime:"2015-12-1 15:46:12" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:206544 datetime:"2015-12-1 16:09:23" > boxlogs:<reason:"\345\217\226\346\254\276" gold:-10000 savings:296544 datetime:"2015-12-1 16:22:01" > boxlogs:<reason:"\350\265\240\351\200\201\346\211\243\346\254\276" gold:-10000 savings:26544 datetime:"2015-12-1 15:55:17" toUid:"QF10000066" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:216544 datetime:"2015-12-1 16:09:33" > boxlogs:<reason:"\345\217\226\346\254\276" gold:-10000 savings:306544 datetime:"2015-12-1 16:21:37" > boxlogs:<reason:"\345\217\226\346\254\276" gold:-10000 savings:36544 datetime:"2015-12-1 15:54:10" > boxlogs:<reason:"\345\217\226\346\254\276" gold:-10000 savings:26544 datetime:"2015-12-1 15:47:30" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:226544 datetime:"2015-12-1 16:09:36" > boxlogs:<reason:"\345\255\230\346\254\276" gold:10000 savings:316544 datetime:"2015-12-1 16:21:27" > boxlogs:<reason:"\345\217\226\346\254\276" gold:-10000 savings:16544 datetime:"2015-12-1 15:47:37" > boxlogs:<reason:"\345\217\226\346\254\276" gold:-10000 savings:6544 datetime:"2015-12-1 15:56:39" > > > putIntoGold:0 isPlaying:false isSeenCard:false isGiveUp:false pos:1 isReady:false isFailed:false isUseDoubleCard:false forbidCompareCardRound:0 useReplaceCardCount:0 betPond:0 > putIntoTotalGold:0 singlePutIntoGold:0 currentRound:0 maxRound:20 totalBetPond:0 wanRenWaitingBetTime:-62135596800 curTurnUserId:"" curTurnTime:-62135596800 lastEndTime:-62135596800 
+I1201 16:52:58.174093 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082c9b24
+I1201 16:52:59.174148 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082c4fc4
+I1201 16:53:00.174258 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082be454
+I1201 16:53:01.174412 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082c2f04
+I1201 16:53:02.174490 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20827d074
+I1201 16:53:03.174660 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082785e4
+I1201 16:53:04.174792 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208269a34
+I1201 16:53:05.174921 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208187024
+I1201 16:53:06.175010 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20826be74
+I1201 16:53:07.175130 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208183994
+I1201 16:53:08.175337 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20816fac4
+I1201 16:53:09.175374 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208160374
+I1201 16:53:10.175534 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208158024
+I1201 16:53:11.175654 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208156164
+I1201 16:53:12.175722 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2081462d4
+I1201 16:53:13.175852 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20811e224
+I1201 16:53:14.175977 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20811f824
+I1201 16:53:15.176108 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208126f54
+I1201 16:53:16.176229 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20812b324
+I1201 16:53:17.176292 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2080d8a04
+I1201 16:53:18.176482 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208113054
+I1201 16:53:19.176523 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20810b384
+I1201 16:53:20.176655 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2080f2354
+I1201 16:53:21.176736 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2080fc5e4
+I1201 16:53:22.176824 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2080eadf4
+I1201 16:53:23.176960 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082cc054
+I1201 16:53:24.177070 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082cd4a4
+I1201 16:53:25.177171 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082f49e4
+I1201 16:53:26.177284 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082b6f64
+I1201 16:53:27.177375 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082b32a4
+gc17(4): 2+9+1382+4 us, 1 -> 2 MB, 56515 (336978-280463) objects, 29 goroutines, 463/439/0 sweeps, 20(410) handoff, 7(23) steal, 87/42/9 yields
+I1201 16:53:28.177593 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20829e154
+I1201 16:53:29.177623 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2081783c4
+I1201 16:53:30.177762 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20829f994
+I1201 16:53:31.177853 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208176a64
+I1201 16:53:32.177935 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20819e664
+I1201 16:53:33.178060 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208172764
+I1201 16:53:34.178176 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20819a424
+I1201 16:53:35.178277 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2081752e4
+I1201 16:53:36.178370 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20819cf14
+I1201 16:53:37.178436 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208270e34
+I1201 16:53:38.178653 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208312fd4
+I1201 16:53:39.178725 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20825aae4
+I1201 16:53:40.178871 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20830fac4
+I1201 16:53:41.178911 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208309934
+I1201 16:53:42.178993 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20830c5f4
+I1201 16:53:43.179184 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc20830d9c4
+I1201 16:53:44.179270 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208302794
+I1201 16:53:45.179384 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc208305db4
+I1201 16:53:46.179542 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082fdc24
+I1201 16:53:47.179599 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082f4754
+I1201 16:53:48.179746 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082f0874
+I1201 16:53:49.179836 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082f9694
+I1201 16:53:50.179955 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082f1cc4
+I1201 16:53:51.180071 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082ecfc4
+I1201 16:53:52.180168 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082cee44
+I1201 16:53:53.180298 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082c8fc4
+I1201 16:53:54.180414 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082c4ff4
+I1201 16:53:55.180553 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082c2e84
+I1201 16:53:56.180593 03098 user_fortune_manager.go:885] UpdateUserFortune1 userId =  QF10000083IsOpen=0xc2082bf0f4
+I1201 16:53:56.181024 03098 session.go:143] ===>发送失败err:write tcp 192.168.1.16:44413: i/o timeout sess:&{0xc2081de090 192.168.1.16 0xc20802dda0 0xc208418270 true 0xc20802de00 {{0 0} 0} {{0 0} 0} 0x60e5e0}
+I1201 16:53:56.181258 03098 session.go:143] ===>发送失败err:write tcp 192.168.1.16:44413: i/o timeout sess:&{0xc2081de090 192.168.1.16 0xc20802dda0 0xc208418270 true 0xc20802de00 {{0 0} 1} {{0 0} 0} 0x60e5e0}
+I1201 16:53:56.181305 03098 session.go:64] disconnected:&{0xc2081de090 192.168.1.16 0xc20802dda0 0xc208418270 true 0xc20802de00 {{0 0} 1} {{0 0} 0} 0x60e5e0}
+I1201 16:53:56.181346 03098 session.go:99] Session。logout, s=&{0xc2081de090 192.168.1.16 0xc20802dda0 0xc208418270 true 0xc20802de00 {{0 0} 1} {{0 0} 0} 0x60e5e0}
+I1201 16:53:56.182252 03098 game_player.go:102] ===>GamePlayer OnLogout userId:QF10000083 sessKey:565d5f9542dd010c1a000002 LoginIP:192.168.1.16 loginTime:2015-12-01 16:51:33.588634106 +0800 CST
+scvg1: inuse: 4, idle: 0, sys: 5, released: 0, consumed: 5 (MB)
+GC forced
+gc18(4): 3+7+1541+4 us, 1 -> 2 MB, 44319 (366990-322671) objects, 27 goroutines, 463/430/0 sweeps, 25(443) handoff, 8(34) steal, 86/50/14 yields
+I1201 16:55:56.886339 03098 rand_bugle.go:87] buildBugleMsg ok. msg=恭喜文武德玩家在菜鸟场单场赢得168388金币
+scvg2: inuse: 3, idle: 1, sys: 5, released: 0, consumed: 5 (MB)
+GC forced
+gc19(4): 4+9+1480+5 us, 1 -> 1 MB, 24153 (371009-346856) objects, 27 goroutines, 463/394/0 sweeps, 21(504) handoff, 9(40) steal, 80/31/11 yields
+I1201 16:57:29.015060 03098 server.go:110] error receiving msg:read tcp 192.168.1.16:44413: connection reset by peer
+I1201 16:57:39.038179 03098 session.go:61] ===>打开session:&{0xc208032120 192.168.1.16 0xc208276300 <nil> false 0xc2082763c0 {{0 0} 0} {{0 0} 0} <nil>}
+I1201 16:57:39.077120 03098 login_handler.go:46] ===>用户登录消息sess:&{0xc208032120 192.168.1.16 0xc208276300 <nil> false 0xc2082763c0 {{0 0} 0} {{0 0} 0} <nil>} msg:username:"15110247349" userpwd:"123456" channelId:"beta" model:"" versionName:"V1.0.1" isSwitchAccount:false 
+I1201 16:57:39.077592 03098 login_handler.go:60] ==>查找用户username:15110247349 err:<nil> u:&{QF10000083 15110247349 cdcb32de6546125198062a1a6650566f SM-G7108V 1  7 false 0 0 0 0 0 0001-01-01 00:00:00 +0000 UTC 0 2015-11-30 16:38:44.622 +0800 CST      0 0001-01-01 00:00:00 +0000 UTC false false 0001-01-01 00:00:00 +0000 UTC false 0001-01-01 00:00:00 +0000 UTC false 0001-01-01 00:00:00 +0000 UTC 0 0001-01-01 00:00:00 +0000 UTC false 0 false false SM-G7108V 200 2015-12-01 09:46:40.806 +0800 CST false }
+I1201 16:57:39.081348 03098 login_handler.go:183] ==>玩家登录成功userId:QF10000083 deviceId: sessKey:565d610342dd010c1a000003 sess:&{0xc208032120 192.168.1.16 0xc208276300 <nil> false 0xc2082763c0 {{0 0} 0} {{0 0} 0} <nil>}
+I1201 16:57:39.081639 03098 login_handler.go:216] ===>登录结果:成功userId:QF10000083 sess:&{0xc208032120 192.168.1.16 0xc208276300 0xc2083861a0 true 0xc2082763c0 {{0 0} 0} {{0 0} 0} 0x60e5e0}
+I1201 16:57:39.137897 03098 get_shop_logs_handler.go:18] GetShopLogsHandler, logs=[]
+I1201 16:57:45.709288 03098 server.go:110] error receiving msg:EOF
+I1201 16:57:45.709416 03098 session.go:64] disconnected:&{0xc208032120 192.168.1.16 0xc208276300 0xc2083861a0 true 0xc2082763c0 {{0 0} 1} {{0 0} 0} 0x60e5e0}
+I1201 16:57:45.709485 03098 session.go:99] Session。logout, s=&{0xc208032120 192.168.1.16 0xc208276300 0xc2083861a0 true 0xc2082763c0 {{0 0} 1} {{0 0} 0} 0x60e5e0}
+I1201 16:57:45.710368 03098 game_player.go:102] ===>GamePlayer OnLogout userId:QF10000083 sessKey:565d610342dd010c1a000003 LoginIP:192.168.1.16 loginTime:2015-12-01 16:57:39.077690892 +0800 CST
+I1201 16:59:05.886541 03098 rand_bugle.go:87] buildBugleMsg ok. msg=恭喜gcp885401获得了特权3权限！领取魅力值到商场兑换心仪的礼品！
+GC forced
+gc20(4): 3+9+1045+159 us, 1 -> 1 MB, 28187 (380799-352612) objects, 26 goroutines, 463/345/0 sweeps, 8(321) handoff, 13(53) steal, 112/15/1 yields
+scvg3: 0 MB released
+scvg3: inuse: 3, idle: 1, sys: 5, released: 0, consumed: 4 (MB)
+I1201 17:00:44.886743 03098 rand_bugle.go:87] buildBugleMsg ok. msg=恭喜123啦啦啦123玩家在菜鸟场单场赢得121856金币
+GC forced
+gc21(4): 4+10+1034+20 us, 1 -> 1 MB, 24711 (385217-360506) objects, 28 goroutines, 463/366/0 sweeps, 23(590) handoff, 10(38) steal, 119/32/3 yields
+I1201 17:01:53.671362 03098 user_fortune_manager.go:748] ResetPwdSafeBox in,newpwd=111111
+I1201 17:01:53.671417 03098 user_fortune_manager.go:751] m.fortune[userId].SafeBox.Pwd=111111
+I1201 17:01:53.886941 03098 rand_bugle.go:87] buildBugleMsg ok. msg=恭喜pestge获得了特权2权限！领取魅力值到商场兑换心仪的礼品！
+scvg4: 0 MB released
+scvg4: inuse: 3, idle: 1, sys: 5, released: 0, consumed: 4 (MB)
+I1201 17:02:34.345292 03098 get_safebox_handler.go:13] GetSafeBoxHandler in
+I1201 17:02:34.345402 03098 user_fortune_manager.go:111] ===>EarnFortune userId:QF10000088 gold:222222 diamond:0 reason:取款
+I1201 17:02:38.836854 03098 get_safebox_handler.go:13] GetSafeBoxHandler in
+I1201 17:02:38.836919 03098 user_fortune_manager.go:111] ===>EarnFortune userId:QF10000088 gold:222222 diamond:0 reason:取款
+I1201 17:02:45.875241 03098 get_safebox_handler.go:13] GetSafeBoxHandler in
+I1201 17:02:45.875311 03098 user_fortune_manager.go:111] ===>EarnFortune userId:QF10000088 gold:111111 diamond:0 reason:取款
+I1201 17:02:48.156943 03098 get_safebox_handler.go:13] GetSafeBoxHandler in
+I1201 17:02:48.157008 03098 user_fortune_manager.go:111] ===>EarnFortune userId:QF10000088 gold:111111 diamond:0 reason:取款
+I1201 17:02:48.742579 03098 get_safebox_handler.go:13] GetSafeBoxHandler in
+I1201 17:02:48.742645 03098 user_fortune_manager.go:111] ===>EarnFortune userId:QF10000088 gold:111111 diamond:0 reason:取款
+I1201 17:02:48.976835 03098 get_safebox_handler.go:13] GetSafeBoxHandler in
+I1201 17:02:48.976896 03098 user_fortune_manager.go:111] ===>EarnFortune userId:QF10000088 gold:111111 diamond:0 reason:取款
+I1201 17:02:49.182782 03098 get_safebox_handler.go:13] GetSafeBoxHandler in
+I1201 17:02:49.182836 03098 user_fortune_manager.go:111] ===>EarnFortune userId:QF10000088 gold:111111 diamond:0 reason:取款
+I1201 17:02:49.382183 03098 get_safebox_handler.go:13] GetSafeBoxHandler in
+I1201 17:02:49.382237 03098 user_fortune_manager.go:111] ===>EarnFortune userId:QF10000088 gold:111111 diamond:0 reason:取款
+I1201 17:02:49.585926 03098 get_safebox_handler.go:13] GetSafeBoxHandler in
+I1201 17:02:49.585990 03098 user_fortune_manager.go:111] ===>EarnFortune userId:QF10000088 gold:111111 diamond:0 reason:取款
+I1201 17:02:49.791762 03098 get_safebox_handler.go:13] GetSafeBoxHandler in
+I1201 17:02:49.791818 03098 user_fortune_manager.go:111] ===>EarnFortune userId:QF10000088 gold:111111 diamond:0 reason:取款
+I1201 17:02:55.105925 03098 get_safebox_handler.go:13] GetSafeBoxHandler in
+I1201 17:02:55.105995 03098 user_fortune_manager.go:111] ===>EarnFortune userId:QF10000088 gold:111111 diamond:0 reason:取款
+I1201 17:03:06.036003 03098 save_safebox_handler.go:13] SaveSafeBoxHandler in
+I1201 17:03:09.678027 03098 get_safebox_handler.go:13] GetSafeBoxHandler in
+I1201 17:03:09.678095 03098 user_fortune_manager.go:111] ===>EarnFortune userId:QF10000088 gold:111111 diamond:0 reason:取款
+GC forced
+gc22(4): 4+9+1071+159 us, 1 -> 1 MB, 28386 (394191-365805) objects, 28 goroutines, 463/347/0 sweeps, 12(312) handoff, 9(42) steal, 80/14/1 yields

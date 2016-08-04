@@ -1,0 +1,93 @@
+{{template "base/frame_base.html" .}}
+{{define "head"}}
+<link rel="stylesheet" href="static/assets/css/morris-0.4.3.min.css">
+<link rel="stylesheet" type="text/css" href="static/assets/lineicons/style.css">
+<link rel="stylesheet" type="text/css" href="static/assets/css/bootstrap-datetimepicker.min.css" >
+{{end}}
+
+{{define "body"}}
+<!--main content start-->
+<section id="main-content">
+  <section class="wrapper site-min-height">
+    <div class="row mt">
+      <div class="col-lg-12">
+        <div class="col-md-12">
+          <!-- 新增用户、活跃用户、付费人数、付费次数、累计付费金额 -->
+          <div class="row mtbox">
+            <div class="col-md-5 col-sm-5 col-md-offset-1 box0">
+              <div class="box1">
+                <span class="li_user"></span>
+                <h5>魅力总值</h5>
+                <h3 id="charm_count">0</h3>
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-5 box0">
+              <div class="box1">
+                <span class="li_heart"></span>
+                <h5>已使用魅力值</h5>
+                <h3 id="charm_used_count">0</h3>
+              </div>
+            </div>
+          </div><!-- /row mt -->  
+		<div class="form-panel">
+          <h4 class="mb"><i class="fa fa-angle-right"></i> 信息查询</h4>
+          <form class="form-inline" role="form">
+
+            <label class="control-label" for="begin_date">起始日期</label>
+            <div id="begin_date" class="input-group date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+              <input id="begin_date_input" class="form-control" size="16" type="text" value="" readonly>
+              <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+            </div>
+            <br><br>
+
+            <label class="control-label" for="end_date">结束日期</label>
+            <div id="end_date" class="input-group date form_date" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+              <input id="end_date_input" class="form-control" size="16" type="text" value="" readonly>
+              <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+            </div>
+            <br><br>
+
+            <button id="query_time" type="button" class="btn btn-theme">查询</button>
+            <button id="query_last15day" type="button" class="btn btn-theme">过去15天</button>
+            <button id="query_last30day" type="button" class="btn btn-theme">过去30天</button>
+          </form>
+        </div><!-- /form-panel -->
+          <div class="row mtbox">
+            <div class="content-panel">
+              <table id="data_table_1" class="table table-hover">
+                <h4 id="data_table_1_h4"></h4>
+                <hr>
+              </table>
+            </div><!-- /content-panel -->
+          </div>
+          <div class="row mtbox">
+            <div class="content-panel">
+              <table id="data_table_2" class="table table-hover">
+                <h4 id="data_table_2_h4"></h4>
+                <hr>
+              </table>
+            </div><!-- /content-panel -->
+          </div>
+          <div class="row mtbox">
+            <div class="content-panel">
+              <table id="data_table_3" class="table table-hover">
+                <h4 id="data_table_3_h4"></h4>
+                <hr>
+              </table>
+            </div><!-- /content-panel -->
+          </div>
+
+        </div><!-- /col-md-12 -->
+      </div>
+    </div>
+  </section><!-- /wrapper -->
+</section><!-- /MAIN CONTENT -->
+{{end}}
+
+{{define "body_after"}}
+<script src="static/js/raphael-min.js"></script>
+<script src="static/js/morris-0.4.3.min.js"></script>
+<script type="text/javascript" src="static/assets/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="static/assets/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+<script src="static/js/operate_charm.js"></script>
+{{end}}

@@ -1,0 +1,2 @@
+
+nohup ./robot --logtostderr=true -db=192.168.1.133 -log_dir=logger/robot > logger/robot/console.log 2>&1 &

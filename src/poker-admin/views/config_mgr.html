@@ -1,0 +1,605 @@
+{{template "base/frame_base.html" .}}
+{{define "head"}}
+<link rel="stylesheet" href="static/assets/css/morris-0.4.3.min.css">
+<link rel="stylesheet" type="text/css" href="static/assets/lineicons/style.css">
+{{end}}
+
+{{define "body"}}
+<!--main content start-->
+<section id="main-content">
+  <section class="wrapper site-min-height">
+    <div class="row mt">
+      <div class="col-lg-12">
+        <div class="form-panel">
+          <h4 class="mb"><i class="fa fa-angle-right"></i> 渠道有效用户配置</h4>
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <label class="control-label" for="onlineSecond">在线时间(秒):</label>
+              <input type="text" class="form-control" id="onlineSecond" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="matchCount">比赛次数:</label>
+              <input type="text" class="form-control" id="matchCount" placeholder="">
+            </div>
+            <button id="update_channel_config" type="button" class="btn btn-theme">修改配置</button>
+          </form>
+        </div><!-- /form-panel -->
+      </div><!-- /col-lg-12 -->
+    </div><!-- /row -->
+
+    <div class="row mt">
+      <div class="col-lg-12">
+        <div class="form-panel">
+          <h4 class="mb"><i class="fa fa-angle-right"></i> 版本配置</h4>
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <label class="control-label" for="prize-version">给予奖励的版本号:</label>
+              <input type="text" class="form-control" id="prize-version" placeholder="">
+            </div>
+            <br><br>
+            <button id="set_prize_version" type="button" class="btn btn-theme">保存</button>
+          </form>
+        </div><!-- /form-panel -->
+      </div><!-- /col-lg-12 -->
+    </div><!-- /row -->
+
+    <div class="row mt">
+      <div class="col-lg-12">
+        <div class="form-panel">
+          <h4 class="mb"><i class="fa fa-angle-right"></i> 常规赛-初级-牌率配置</h4>
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <label class="control-label" for="common-level1-Single">单牌概率:</label>
+              <input type="text" class="form-control" id="common-level1-Single" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="common-level1-Double">双牌概率:</label>
+              <input type="text" class="form-control" id="common-level1-Double" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="common-level1-ShunZi">顺子概率:</label>
+              <input type="text" class="form-control" id="common-level1-ShunZi" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="common-level1-JinHua">金花概率:</label>
+              <input type="text" class="form-control" id="common-level1-JinHua" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="common-level1-ShunJin">顺金概率:</label>
+              <input type="text" class="form-control" id="common-level1-ShunJin" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="common-level1-BaoZi">豹子概率:</label>
+              <input type="text" class="form-control" id="common-level1-BaoZi" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="common-level1-WinGold">吸金期结束条件:</label>
+              <input type="text" class="form-control" id="common-level1-WinGold" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="common-level1-WinRateHigh">吸金期胜率:</label>
+              <input type="text" class="form-control" id="common-level1-WinRateHigh" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="common-level1-LoseGold">吐金期结束条件:</label>
+              <input type="text" class="form-control" id="common-level1-LoseGold" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="common-level1-WinRateLow">吐金期胜率:</label>
+              <input type="text" class="form-control" id="common-level1-WinRateLow" placeholder="">
+            </div>
+            <br><br>
+            <button id="save_common_level1_match_config" type="button" class="btn btn-theme">保存</button>
+          </form>
+        </div><!-- /form-panel -->
+      </div><!-- /col-lg-12 -->
+    </div><!-- /row -->
+
+    <div class="row mt">
+      <div class="col-lg-12">
+        <div class="form-panel">
+          <h4 class="mb"><i class="fa fa-angle-right"></i> 常规赛-中级-牌率配置</h4>
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <label class="control-label" for="common-level2-Single">单牌概率:</label>
+              <input type="text" class="form-control" id="common-level2-Single" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="common-level2-Double">双牌概率:</label>
+              <input type="text" class="form-control" id="common-level2-Double" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="common-level2-ShunZi">顺子概率:</label>
+              <input type="text" class="form-control" id="common-level2-ShunZi" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="common-level2-JinHua">金花概率:</label>
+              <input type="text" class="form-control" id="common-level2-JinHua" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="common-level2-ShunJin">顺金概率:</label>
+              <input type="text" class="form-control" id="common-level2-ShunJin" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="common-level2-BaoZi">豹子概率:</label>
+              <input type="text" class="form-control" id="common-level2-BaoZi" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="common-level2-WinGold">吸金期结束条件:</label>
+              <input type="text" class="form-control" id="common-level2-WinGold" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="common-level2-WinRateHigh">吸金期胜率:</label>
+              <input type="text" class="form-control" id="common-level2-WinRateHigh" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="common-level2-LoseGold">吐金期结束条件:</label>
+              <input type="text" class="form-control" id="common-level2-LoseGold" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="common-level2-WinRateLow">吐金期胜率:</label>
+              <input type="text" class="form-control" id="common-level2-WinRateLow" placeholder="">
+            </div>
+            <br><br>
+            <button id="save_common_level2_match_config" type="button" class="btn btn-theme">保存</button>
+          </form>
+        </div><!-- /form-panel -->
+      </div><!-- /col-lg-12 -->
+    </div><!-- /row -->
+
+    <div class="row mt">
+      <div class="col-lg-12">
+        <div class="form-panel">
+          <h4 class="mb"><i class="fa fa-angle-right"></i> 常规赛-高级-牌率配置</h4>
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <label class="control-label" for="common-level3-Single">单牌概率:</label>
+              <input type="text" class="form-control" id="common-level3-Single" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="common-level3-Double">双牌概率:</label>
+              <input type="text" class="form-control" id="common-level3-Double" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="common-level3-ShunZi">顺子概率:</label>
+              <input type="text" class="form-control" id="common-level3-ShunZi" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="common-level3-JinHua">金花概率:</label>
+              <input type="text" class="form-control" id="common-level3-JinHua" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="common-level3-ShunJin">顺金概率:</label>
+              <input type="text" class="form-control" id="common-level3-ShunJin" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="common-level3-BaoZi">豹子概率:</label>
+              <input type="text" class="form-control" id="common-level3-BaoZi" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="common-level3-WinGold">吸金期结束条件:</label>
+              <input type="text" class="form-control" id="common-level3-WinGold" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="common-level3-WinRateHigh">吸金期胜率:</label>
+              <input type="text" class="form-control" id="common-level3-WinRateHigh" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="common-level3-LoseGold">吐金期结束条件:</label>
+              <input type="text" class="form-control" id="common-level3-LoseGold" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="common-level3-WinRateLow">吐金期胜率:</label>
+              <input type="text" class="form-control" id="common-level3-WinRateLow" placeholder="">
+            </div>
+            <br><br>
+            <button id="save_common_level3_match_config" type="button" class="btn btn-theme">保存</button>
+          </form>
+        </div><!-- /form-panel -->
+      </div><!-- /col-lg-12 -->
+    </div><!-- /row -->
+
+    <div class="row mt">
+      <div class="col-lg-12">
+        <div class="form-panel">
+          <h4 class="mb"><i class="fa fa-angle-right"></i> 道具赛-初级-牌率配置</h4>
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <label class="control-label" for="item-level1-Single">单牌概率:</label>
+              <input type="text" class="form-control" id="item-level1-Single" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="item-level1-Double">双牌概率:</label>
+              <input type="text" class="form-control" id="item-level1-Double" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="item-level1-ShunZi">顺子概率:</label>
+              <input type="text" class="form-control" id="item-level1-ShunZi" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="item-level1-JinHua">金花概率:</label>
+              <input type="text" class="form-control" id="item-level1-JinHua" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="item-level1-ShunJin">顺金概率:</label>
+              <input type="text" class="form-control" id="item-level1-ShunJin" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="item-level1-BaoZi">豹子概率:</label>
+              <input type="text" class="form-control" id="item-level1-BaoZi" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="item-level1-WinGold">吸金期结束条件:</label>
+              <input type="text" class="form-control" id="item-level1-WinGold" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="item-level1-WinRateHigh">吸金期胜率:</label>
+              <input type="text" class="form-control" id="item-level1-WinRateHigh" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="item-level1-LoseGold">吐金期结束条件:</label>
+              <input type="text" class="form-control" id="item-level1-LoseGold" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="item-level1-WinRateLow">吐金期胜率:</label>
+              <input type="text" class="form-control" id="item-level1-WinRateLow" placeholder="">
+            </div>
+            <br><br>
+            <button id="save_item_level1_match_config" type="button" class="btn btn-theme">保存</button>
+          </form>
+        </div><!-- /form-panel -->
+      </div><!-- /col-lg-12 -->
+    </div><!-- /row -->
+
+    <div class="row mt">
+      <div class="col-lg-12">
+        <div class="form-panel">
+          <h4 class="mb"><i class="fa fa-angle-right"></i> 道具赛-中级-牌率配置</h4>
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <label class="control-label" for="item-level2-Single">单牌概率:</label>
+              <input type="text" class="form-control" id="item-level2-Single" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="item-level2-Double">双牌概率:</label>
+              <input type="text" class="form-control" id="item-level2-Double" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="item-level2-ShunZi">顺子概率:</label>
+              <input type="text" class="form-control" id="item-level2-ShunZi" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="item-level2-JinHua">金花概率:</label>
+              <input type="text" class="form-control" id="item-level2-JinHua" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="item-level2-ShunJin">顺金概率:</label>
+              <input type="text" class="form-control" id="item-level2-ShunJin" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="item-level2-BaoZi">豹子概率:</label>
+              <input type="text" class="form-control" id="item-level2-BaoZi" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="item-level2-WinGold">吸金期结束条件:</label>
+              <input type="text" class="form-control" id="item-level2-WinGold" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="item-level2-WinRateHigh">吸金期胜率:</label>
+              <input type="text" class="form-control" id="item-level2-WinRateHigh" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="item-level2-LoseGold">吐金期结束条件:</label>
+              <input type="text" class="form-control" id="item-level2-LoseGold" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="item-level2-WinRateLow">吐金期胜率:</label>
+              <input type="text" class="form-control" id="item-level2-WinRateLow" placeholder="">
+            </div>
+            <br><br>
+            <button id="save_item_level2_match_config" type="button" class="btn btn-theme">保存</button>
+          </form>
+        </div><!-- /form-panel -->
+      </div><!-- /col-lg-12 -->
+    </div><!-- /row -->
+
+    <div class="row mt">
+      <div class="col-lg-12">
+        <div class="form-panel">
+          <h4 class="mb"><i class="fa fa-angle-right"></i> 道具赛-高级-牌率配置</h4>
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <label class="control-label" for="item-level3-Single">单牌概率:</label>
+              <input type="text" class="form-control" id="item-level3-Single" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="item-level3-Double">双牌概率:</label>
+              <input type="text" class="form-control" id="item-level3-Double" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="item-level3-ShunZi">顺子概率:</label>
+              <input type="text" class="form-control" id="item-level3-ShunZi" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="item-level3-JinHua">金花概率:</label>
+              <input type="text" class="form-control" id="item-level3-JinHua" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="item-level3-ShunJin">顺金概率:</label>
+              <input type="text" class="form-control" id="item-level3-ShunJin" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="item-level3-BaoZi">豹子概率:</label>
+              <input type="text" class="form-control" id="item-level3-BaoZi" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="item-level3-WinGold">吸金期结束条件:</label>
+              <input type="text" class="form-control" id="item-level3-WinGold" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="item-level3-WinRateHigh">吸金期胜率:</label>
+              <input type="text" class="form-control" id="item-level3-WinRateHigh" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="item-level3-LoseGold">吐金期结束条件:</label>
+              <input type="text" class="form-control" id="item-level3-LoseGold" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="item-level3-WinRateLow">吐金期胜率:</label>
+              <input type="text" class="form-control" id="item-level3-WinRateLow" placeholder="">
+            </div>
+            <br><br>
+            <button id="save_item_level3_match_config" type="button" class="btn btn-theme">保存</button>
+          </form>
+        </div><!-- /form-panel -->
+      </div><!-- /col-lg-12 -->
+    </div><!-- /row -->
+
+    <div class="row mt">
+      <div class="col-lg-12">
+        <div class="form-panel">
+          <h4 class="mb"><i class="fa fa-angle-right"></i> 淘汰赛-初级-牌率配置</h4>
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <label class="control-label" for="sng-level1-Single">单牌概率:</label>
+              <input type="text" class="form-control" id="sng-level1-Single" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="sng-level1-Double">双牌概率:</label>
+              <input type="text" class="form-control" id="sng-level1-Double" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="sng-level1-ShunZi">顺子概率:</label>
+              <input type="text" class="form-control" id="sng-level1-ShunZi" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="sng-level1-JinHua">金花概率:</label>
+              <input type="text" class="form-control" id="sng-level1-JinHua" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="sng-level1-ShunJin">顺金概率:</label>
+              <input type="text" class="form-control" id="sng-level1-ShunJin" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="sng-level1-BaoZi">豹子概率:</label>
+              <input type="text" class="form-control" id="sng-level1-BaoZi" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="sng-level1-WinGold">吸金期结束条件:</label>
+              <input type="text" class="form-control" id="sng-level1-WinGold" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="sng-level1-WinRateHigh">吸金期胜率:</label>
+              <input type="text" class="form-control" id="sng-level1-WinRateHigh" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="sng-level1-LoseGold">吐金期结束条件:</label>
+              <input type="text" class="form-control" id="sng-level1-LoseGold" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="sng-level1-WinRateLow">吐金期胜率:</label>
+              <input type="text" class="form-control" id="sng-level1-WinRateLow" placeholder="">
+            </div>
+            <br><br>
+            <button id="save_sng_level1_match_config" type="button" class="btn btn-theme">保存</button>
+          </form>
+        </div><!-- /form-panel -->
+      </div><!-- /col-lg-12 -->
+    </div><!-- /row -->
+
+    <div class="row mt">
+      <div class="col-lg-12">
+        <div class="form-panel">
+          <h4 class="mb"><i class="fa fa-angle-right"></i> 淘汰赛-中级-牌率配置</h4>
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <label class="control-label" for="sng-level2-Single">单牌概率:</label>
+              <input type="text" class="form-control" id="sng-level2-Single" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="sng-level2-Double">双牌概率:</label>
+              <input type="text" class="form-control" id="sng-level2-Double" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="sng-level2-ShunZi">顺子概率:</label>
+              <input type="text" class="form-control" id="sng-level2-ShunZi" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="sng-level2-JinHua">金花概率:</label>
+              <input type="text" class="form-control" id="sng-level2-JinHua" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="sng-level2-ShunJin">顺金概率:</label>
+              <input type="text" class="form-control" id="sng-level2-ShunJin" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="sng-level2-BaoZi">豹子概率:</label>
+              <input type="text" class="form-control" id="sng-level2-BaoZi" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="sng-level2-WinGold">吸金期结束条件:</label>
+              <input type="text" class="form-control" id="sng-level2-WinGold" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="sng-level2-WinRateHigh">吸金期胜率:</label>
+              <input type="text" class="form-control" id="sng-level2-WinRateHigh" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="sng-level2-LoseGold">吐金期结束条件:</label>
+              <input type="text" class="form-control" id="sng-level2-LoseGold" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="sng-level2-WinRateLow">吐金期胜率:</label>
+              <input type="text" class="form-control" id="sng-level2-WinRateLow" placeholder="">
+            </div>
+            <br><br>
+            <button id="save_sng_level2_match_config" type="button" class="btn btn-theme">保存</button>
+          </form>
+        </div><!-- /form-panel -->
+      </div><!-- /col-lg-12 -->
+    </div><!-- /row -->
+
+    <div class="row mt">
+      <div class="col-lg-12">
+        <div class="form-panel">
+          <h4 class="mb"><i class="fa fa-angle-right"></i> 淘汰赛-高级-牌率配置</h4>
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <label class="control-label" for="sng-level3-Single">单牌概率:</label>
+              <input type="text" class="form-control" id="sng-level3-Single" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="sng-level3-Double">双牌概率:</label>
+              <input type="text" class="form-control" id="sng-level3-Double" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="sng-level3-ShunZi">顺子概率:</label>
+              <input type="text" class="form-control" id="sng-level3-ShunZi" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="sng-level3-JinHua">金花概率:</label>
+              <input type="text" class="form-control" id="sng-level3-JinHua" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="sng-level3-ShunJin">顺金概率:</label>
+              <input type="text" class="form-control" id="sng-level3-ShunJin" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="sng-level3-BaoZi">豹子概率:</label>
+              <input type="text" class="form-control" id="sng-level3-BaoZi" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="sng-level3-WinGold">吸金期结束条件:</label>
+              <input type="text" class="form-control" id="sng-level3-WinGold" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="sng-level3-WinRateHigh">吸金期胜率:</label>
+              <input type="text" class="form-control" id="sng-level3-WinRateHigh" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="sng-level3-LoseGold">吐金期结束条件:</label>
+              <input type="text" class="form-control" id="sng-level3-LoseGold" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="sng-level3-WinRateLow">吐金期胜率:</label>
+              <input type="text" class="form-control" id="sng-level3-WinRateLow" placeholder="">
+            </div>
+            <br><br>
+            <button id="save_sng_level3_match_config" type="button" class="btn btn-theme">保存</button>
+          </form>
+        </div><!-- /form-panel -->
+      </div><!-- /col-lg-12 -->
+    </div><!-- /row -->
+
+    <div class="row mt">
+      <div class="col-lg-12">
+        <div class="form-panel">
+          <h4 class="mb"><i class="fa fa-angle-right"></i> 万人场牌率配置</h4>
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <label class="control-label" for="wan-Single">单牌概率:</label>
+              <input type="text" class="form-control" id="wan-Single" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="wan-Double">双牌概率:</label>
+              <input type="text" class="form-control" id="wan-Double" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="wan-ShunZi">顺子概率:</label>
+              <input type="text" class="form-control" id="wan-ShunZi" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="wan-JinHua">金花概率:</label>
+              <input type="text" class="form-control" id="wan-JinHua" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="wan-ShunJin">顺金概率:</label>
+              <input type="text" class="form-control" id="wan-ShunJin" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="wan-BaoZi">豹子概率:</label>
+              <input type="text" class="form-control" id="wan-BaoZi" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="wan-WinGold">吸金期结束条件:</label>
+              <input type="text" class="form-control" id="wan-WinGold" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="wan-WinRateHigh">吸金期胜率:</label>
+              <input type="text" class="form-control" id="wan-WinRateHigh" placeholder="">
+            </div>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="wan-LoseGold">吐金期结束条件:</label>
+              <input type="text" class="form-control" id="wan-LoseGold" placeholder="">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="wan-WinRateLow">吐金期胜率:</label>
+              <input type="text" class="form-control" id="wan-WinRateLow" placeholder="">
+            </div>
+            <br><br>
+            <button id="save_wan_match_config" type="button" class="btn btn-theme">保存</button>
+          </form>
+        </div><!-- /form-panel -->
+      </div><!-- /col-lg-12 -->
+    </div><!-- /row -->
+
+  </section><!-- /wrapper -->
+</section><!-- /MAIN CONTENT -->
+{{end}}
+
+{{define "body_after"}}
+<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="static/assets/css/morris-0.4.3.min.js"></script>
+<script src="static/assets/js/layer/layer.min.js"></script>
+<script src="static/js/config_mgr.js"></script>
+{{end}}

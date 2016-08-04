@@ -1,0 +1,88 @@
+{{template "base/frame_base.html" .}}
+{{define "head"}}
+<link rel="stylesheet" href="static/assets/css/morris-0.4.3.min.css">
+<link rel="stylesheet" type="text/css" href="static/assets/lineicons/style.css">
+{{end}}
+
+{{define "body"}}
+<!--main content start-->
+<section id="main-content">
+  <section class="wrapper site-min-height">
+    <div class="row mt">
+      <div class="col-lg-12">
+        <div class="form-panel">
+          <h4 class="mb"><i class="fa fa-angle-right"></i> 玩家信息查询</h4>
+          <form class="form-inline" role="form">
+            <br>
+            <div class="form-group">
+              <label class="control-label" for="userId">根据玩家ID:</label>
+              <input type="text" class="form-control" id="userId" placeholder="">
+            </div>
+            <button id="username_query" type="button" class="btn btn-theme">查询</button>
+            <br><br>
+            <div class="form-group">
+              <label class="control-label" for="nickname">根据玩家昵称:</label>
+              <input type="text" class="form-control" id="nickname" placeholder="">
+            </div>
+            <button id="nickname_query" type="button" class="btn btn-theme">查询</button>
+          </form>
+        </div><!-- /form-panel -->
+      </div><!-- /col-lg-12 -->
+    </div><!-- /row -->
+
+    <div id="player_list_panel" class="row mt">
+      <div class="col-lg-12">
+        <div class="form-panel">
+          <table id="data_table" class="table table-striped table-advance table-hover">
+            <h4 id="data_table_title"></h4>
+            <hr>
+          </table>
+        </div><!-- /content-panel -->
+      </div><!-- /col-md-12 -->
+    </div><!-- /row -->
+
+    <div id="player_info_editor_panel" class="row mt">
+      <div class="col-md-12">
+        <div class="form-panel">
+          <h4 id="player_info_editor_title" class="mb"><i class="fa fa-angle-right"></i></h4>
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <label class="control-label" for="incGoldCount">增加金币</label>
+              <input type="text" class="form-control" id="incGoldCount" placeholder="">
+            </div>
+            <button id="inc_gold" type="button" class="btn btn-theme">增加金币</button>
+            <hr>
+            <div class="form-group">
+              <label class="control-label" for="incDiamondCount">增加钻石</label>
+              <input type="text" class="form-control" id="incDiamondCount" placeholder="">
+            </div>
+            <button id="inc_diamond" type="button" class="btn btn-theme">增加钻石</button>
+            
+            <hr>
+          </form>
+          <label class="control-label">通知邮件:</label>
+          <br>
+          <input type="text" class="form-control" id="mailContent" placeholder="邮件内容">
+          <br>
+          <input type="text" class="form-control" id="goldCount" placeholder="金币数量">
+          <br>
+          <input type="text" class="form-control" id="diamondCount" placeholder="钻石数量">
+          <br>
+          <button id="send_mail" type="button" class="btn btn-theme">发送邮件</button>
+          <hr>
+          <button id="freeze_player" type="button" class="btn btn-theme">帐号冻结</button>
+          <button id="un_freeze_player" type="button" class="btn btn-theme">解冻帐号</button>
+          <br><br>
+        </div><!-- /form-panel -->
+      </div><!-- /col-lg-12 -->
+    </div><!-- /row -->
+  </section><!-- /wrapper -->
+</section><!-- /MAIN CONTENT -->
+{{end}}
+
+{{define "body_after"}}
+   <script src="static/js/raphael-min.js"></script>
+   <script src="static/js/morris-0.4.3.min.js"></script>
+<script src="static/assets/js/layer/layer.min.js"></script>
+<script src="static/js/player_mgr.js"></script>
+{{end}}
